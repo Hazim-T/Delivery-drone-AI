@@ -1,2 +1,2 @@
 # Delivery-drone-AI
-A reinforcement learning project involving training a drone to deliver parcels.
+A reinforcement learning project using unity to about a drone delivering parcels.
