@@ -4,8 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< Updated upstream
   - delivery spot
   - Score
+=======
+  - Parcel
+  - City
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
