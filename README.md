@@ -7,7 +7,7 @@ A reinforcement learning project using unity to about a drone delivering parcels
 
 
 
-- Adding skybox and world border and parcel assets.
+//- Adding skybox and world border and parcel assets.{done}
 
 - Adding trails for each drone.
 
