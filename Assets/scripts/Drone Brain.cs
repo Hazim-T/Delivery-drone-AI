@@ -24,6 +24,8 @@ public class DroneBrain : Agent
 
     public Transform ParcelTransform;
 
+    public Transform DropZone;
+
     private int NumOfCollision = 0;
 
     public override void OnEpisodeBegin()
@@ -50,7 +52,12 @@ public class DroneBrain : Agent
 
         float speed = 10f;
         transform.Translate(new Vector3(movex, movey, movez) * speed * Time.fixedDeltaTime);
+
+        //distance from parcel
         AddReward(Vector3.Distance(ParcelTransform.localPosition, transform.localPosition) / 1000);
+        //time penalty
+        AddReward(-0.01f);
+
     }
 
     public void OnCollisionEnter(Collision collision)

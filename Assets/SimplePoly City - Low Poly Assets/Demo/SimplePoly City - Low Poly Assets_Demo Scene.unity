@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.70969534, g: 0.8193394, b: 0.9388731, a: 1}
+  m_IndirectSpecularColor: {r: 0.7097201, g: 0.81933844, b: 0.9389911, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -3268,7 +3268,7 @@ GameObject:
   - component: {fileID: 86023816}
   m_Layer: 0
   m_Name: Parcel (5)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3368,7 +3368,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4058,7 +4058,7 @@ GameObject:
   - component: {fileID: 105175869}
   m_Layer: 0
   m_Name: Parcel (1)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4158,7 +4158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4757,7 +4757,7 @@ GameObject:
   - component: {fileID: 118596083}
   m_Layer: 0
   m_Name: Parcel (2)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4857,7 +4857,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5044,7 +5044,7 @@ GameObject:
   - component: {fileID: 120624609}
   m_Layer: 0
   m_Name: Parcel (16)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5144,7 +5144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13331,7 +13331,7 @@ GameObject:
   - component: {fileID: 343983006}
   m_Layer: 0
   m_Name: Parcel (17)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13431,7 +13431,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13461,63 +13461,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343983004}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &344000529
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -160.14476
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 44.55
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 96.599266
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      propertyPath: m_Name
-      value: DroneUvMapped
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
 --- !u!1 &344602801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dac1a631b172e66469fb09e9987bcf57, type: 3}
@@ -15859,7 +15802,7 @@ GameObject:
   - component: {fileID: 410898401}
   m_Layer: 0
   m_Name: City
-  m_TagString: Untagged
+  m_TagString: City
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16821,7 +16764,7 @@ GameObject:
   - component: {fileID: 412222687}
   m_Layer: 0
   m_Name: Parcel (11)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16921,7 +16864,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22049,12 +21992,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541228076}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -150.75, y: 41.77, z: 107.36}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -86.979996, y: 0, z: 15}
   m_LocalScale: {x: 3, y: 0.01, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1507011138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &541228081
 Rigidbody:
@@ -23586,7 +23529,7 @@ GameObject:
   - component: {fileID: 584024751}
   m_Layer: 0
   m_Name: Parcel (21)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23686,7 +23629,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25138,7 +25081,7 @@ Transform:
   m_GameObject: {fileID: 622145220}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 116.81, y: 0, z: 0}
+  m_LocalPosition: {x: 116.810005, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 0.01, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25418,7 +25361,7 @@ GameObject:
   - component: {fileID: 627777121}
   m_Layer: 0
   m_Name: Parcel (8)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25518,7 +25461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30442,7 +30385,7 @@ GameObject:
   - component: {fileID: 760697541}
   m_Layer: 0
   m_Name: Parcel (7)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30542,7 +30485,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31863,7 +31806,7 @@ GameObject:
   - component: {fileID: 804300734}
   m_Layer: 0
   m_Name: Parcel
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31936,7 +31879,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34136,7 +34079,7 @@ GameObject:
   - component: {fileID: 863804790}
   m_Layer: 0
   m_Name: Parcel (15)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34236,7 +34179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38418,7 +38361,7 @@ GameObject:
   - component: {fileID: 993688109}
   m_Layer: 0
   m_Name: Parcel (6)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38518,7 +38461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47453,7 +47396,7 @@ GameObject:
   - component: {fileID: 1238103574}
   m_Layer: 0
   m_Name: Parcel (10)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47553,7 +47496,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48057,7 +48000,7 @@ GameObject:
   - component: {fileID: 1250224781}
   m_Layer: 0
   m_Name: Parcel (18)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48157,7 +48100,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50169,7 +50112,7 @@ GameObject:
   - component: {fileID: 1288658263}
   m_Layer: 0
   m_Name: Parcel (13)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50269,7 +50212,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51931,7 +51874,7 @@ GameObject:
   - component: {fileID: 1330816896}
   m_Layer: 0
   m_Name: Parcel (12)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52031,7 +51974,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58266,6 +58209,214 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
   m_PrefabInstance: {fileID: 1472262259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1472806388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -161.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 46.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 102.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663716559195562, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472806395}
+    - targetCorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472806394}
+    - targetCorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472806393}
+    - targetCorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472806396}
+    - targetCorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472806397}
+    - targetCorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472806398}
+  m_SourcePrefab: {fileID: 100100000, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+--- !u!1 &1472806389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1749469876035402, guid: 8b826a7c5dffaf04d99fa3f39f8d9060, type: 3}
+  m_PrefabInstance: {fileID: 1472806388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1472806393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472806389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 1
+  TakeActionsBetweenDecisions: 0
+--- !u!114 &1472806394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472806389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c933b59cd2b21428c8f30148b8b650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 10000
+  ParcelTransform: {fileID: 804300733}
+  DropZone: {fileID: 0}
+--- !u!114 &1472806395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472806389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 7
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 3
+      BranchSizes: 
+    VectorActionSize: 03000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 1
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
+--- !u!114 &1472806396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472806389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: SideSensor
+  m_DetectableTags: []
+  m_RaysPerDirection: 8
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0.7
+  m_RayLength: 10
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
+--- !u!114 &1472806397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472806389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: TopSensor
+  m_DetectableTags: []
+  m_RaysPerDirection: 4
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0.5
+  m_RayLength: 10
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 10
+--- !u!114 &1472806398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472806389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: BottomSensor
+  m_DetectableTags: []
+  m_RaysPerDirection: 4
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0.5
+  m_RayLength: 10
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: -10
 --- !u!1001 &1473259742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59207,18 +59358,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 541228080}
   - {fileID: 159154117}
   - {fileID: 111061966}
-  - {fileID: 1446812181}
+  - {fileID: 264017527}
+  - {fileID: 796986815}
+  - {fileID: 622145221}
   - {fileID: 2013592220}
   - {fileID: 700519181}
   - {fileID: 264072238}
   - {fileID: 1691965927}
   - {fileID: 1125273800}
   - {fileID: 1333601507}
-  - {fileID: 264017527}
-  - {fileID: 796986815}
-  - {fileID: 622145221}
+  - {fileID: 1446812181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507695305 stripped
@@ -60957,7 +61109,7 @@ GameObject:
   - component: {fileID: 1581377828}
   m_Layer: 0
   m_Name: Parcel (14)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61057,7 +61209,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -62944,7 +63096,7 @@ GameObject:
   - component: {fileID: 1637767078}
   m_Layer: 0
   m_Name: Parcel (20)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63044,7 +63196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70983,7 +71135,7 @@ GameObject:
   - component: {fileID: 1863480604}
   m_Layer: 0
   m_Name: Parcel (3)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71083,7 +71235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77146,7 +77298,7 @@ GameObject:
   - component: {fileID: 2017784221}
   m_Layer: 0
   m_Name: Parcel (4)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77246,7 +77398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77886,7 +78038,7 @@ GameObject:
   - component: {fileID: 2029637209}
   m_Layer: 0
   m_Name: Parcel (22)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77986,7 +78138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80091,7 +80243,7 @@ GameObject:
   - component: {fileID: 2084112431}
   m_Layer: 0
   m_Name: Parcel (19)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80191,7 +80343,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82169,7 +82321,7 @@ GameObject:
   - component: {fileID: 2144874383}
   m_Layer: 0
   m_Name: Parcel (9)
-  m_TagString: Untagged
+  m_TagString: Parcel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82269,7 +82421,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31de3d5a0021e4489f099dfd2482411, type: 2}
+  - {fileID: 2100000, guid: cee3a9f20f2f8c74ba61a924bb18c9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82333,8 +82485,7 @@ SceneRoots:
   - {fileID: 572876564}
   - {fileID: 410898401}
   - {fileID: 1318266300}
-  - {fileID: 541228080}
-  - {fileID: 344000529}
   - {fileID: 1692915053}
   - {fileID: 1507011138}
   - {fileID: 984936916}
+  - {fileID: 1472806388}
