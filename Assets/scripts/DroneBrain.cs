@@ -36,16 +36,13 @@ public class DroneBrain : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(transform.position);
-        sensor.AddObservation(ParcelTransform.position);
         sensor.AddObservation(Vector3.Distance(ParcelTransform.localPosition, transform.localPosition));
-        //drop zone position.
-        //distance between drone and drop zone.
-        //vector sensors around drone to avoid collision.
+        sensor.AddObservation(Vector3.Distance(ParcelTransform.localPosition, DropZone.localPosition));
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        //<ActionBuffers> SET THIS SET THIS
         float movex = actions.ContinuousActions[0];
         float movey = actions.ContinuousActions[1];
         float movez = actions.ContinuousActions[2];
@@ -69,8 +66,9 @@ public class DroneBrain : Agent
             AddReward(-100f);
             EndEpisode();
         }
-
-        if (collision.collider.tag == "parcel")
+        
+//        if (collision.collider.tag == "parcel")
+          if (collision.collider.CompareTag("parcel"))
         {
             AddReward(100f);
             EndEpisode();
