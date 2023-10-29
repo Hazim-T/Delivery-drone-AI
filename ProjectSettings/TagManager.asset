@@ -8,6 +8,7 @@ TagManager:
   - Parcel
   - City
   - DropZone
+  - SkyBox
   layers:
   - Default
   - TransparentFX
