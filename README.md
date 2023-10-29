@@ -2,32 +2,26 @@
 A reinforcement learning project using unity to about a drone delivering parcels.
 
 
---Current tasks:
-- (optional) new drone controls. so only take the models.
+--Tasks:
+
+- (optional) new drone controls. so only take the models. [DONE]
+
+- Adding trails for drones.
+
+- Adding skybox and world border and parcel assets. (world border remaining)
 
 
 
-- Adding skybox and world border and parcel assets.
+- positive rewards : {time, accuracty of drop, distance to drop zone} [DONE]
 
-- Adding trails for each drone.
+- negative rewards : {collision for hitting environment and drones, going too high, parcel collides} [DONE]
 
-
-
-- positive rewards : {time, accuracty of drop, distance to drop zone}
-
-- negative rewards : {collision for hitting environment and drones, going too high, parcel collides}
-
-
-
-- It can only drop parcel at a certain Y level and a certain low speed(<1).
   
-- Having multiple drones in each episode, but multiple episodes are the same time ghosting since the environment is constant.
+- Having multiple drones in each episode, but multiple episodes are the same time ghosting since the environment is constant. (under thought)
 
-- beside number_of_steps, add a timer to see how the drone improves.
+- beside number_of_steps, add a timer to see how the drone improves. [DONE]
 
-
-
-- mechanics needed : {drop zone random generation, parcel attaching and detaching, parcel condition(number of parcel collisions mapped to conditions)
-                       drone recognizing it's own parcel}
+- mechanics needed : {drop zone random generation (under work), parcel attaching and detaching (under thought), parcel condition(number of parcel collisions mapped to conditions)[DONE]
+                       drone recognizing it's own parcel(under thought)}
   
 
