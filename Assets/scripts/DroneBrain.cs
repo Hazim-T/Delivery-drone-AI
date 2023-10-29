@@ -13,7 +13,7 @@ public class DroneBrain : Agent
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -30,14 +30,18 @@ public class DroneBrain : Agent
 
     public override void OnEpisodeBegin()
     {
-        transform.position = new Vector3(0, 4, 1);
-        ParcelTransform.position = new Vector3(Random.Range(0, 1), Random.Range(3, 4), Random.Range(4, 5));
+        transform.localPosition = new Vector3(-11.7f, 13f, 2f);
+        // m_n_y TODO: you should make it reset to one of the 3 or 4 random positions you chose ----
+
+        //DropZone.localPosition = new Vector3();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(Vector3.Distance(ParcelTransform.localPosition, transform.localPosition));
-        sensor.AddObservation(Vector3.Distance(ParcelTransform.localPosition, DropZone.localPosition));
+        sensor.AddObservation(Vector3.Distance(transform.localPosition, DropZone.localPosition));
+
+        AddReward(-0.01f); // time penalty to motivate faster runs
+
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -47,14 +51,18 @@ public class DroneBrain : Agent
         float movey = actions.ContinuousActions[1];
         float movez = actions.ContinuousActions[2];
 
-        float speed = 10f;
+        float speed = 7f;
         transform.Translate(new Vector3(movex, movey, movez) * speed * Time.fixedDeltaTime);
 
-        //distance from parcel
-        AddReward(Vector3.Distance(ParcelTransform.localPosition, transform.localPosition) / 1000);
-        //time penalty
-        AddReward(-0.01f);
+        if (transform.position.y > 17f) {
+            AddReward(-100f);
+            //EndEpisode();
+        }
 
+        //distance from parcel
+        {
+            AddReward((1f / (Vector3.Distance(ParcelTransform.localPosition, transform.localPosition) + 1f))/10 );
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -66,9 +74,9 @@ public class DroneBrain : Agent
             AddReward(-100f);
             EndEpisode();
         }
-        
-//        if (collision.collider.tag == "parcel")
-          if (collision.collider.CompareTag("parcel"))
+
+          //if (collision.collider.tag == "DropZone")
+          if (collision.collider.CompareTag("DropZone"))
         {
             AddReward(100f);
             EndEpisode();
@@ -87,7 +95,7 @@ public class DroneBrain : Agent
     {
         ActionSegment<float> continuousactions = actionsOut.ContinuousActions;
         continuousactions[0] = Input.GetAxisRaw("Horizontal");
-        continuousactions[1] = 0;
+        continuousactions[1] = 0; //idk how to
         continuousactions[2] = Input.GetAxisRaw("Vertical");
     }
 
