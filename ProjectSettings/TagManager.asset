@@ -9,6 +9,8 @@ TagManager:
   - City
   - DropZone
   - SkyBox
+  - Spawn Points
+  - spawnPoints
   layers:
   - Default
   - TransparentFX

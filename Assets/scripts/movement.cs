@@ -1,55 +1,104 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
-public class PlayerMovement : MonoBehaviour
+namespace DronesAttack
 {
-    Rigidbody rb;
-    [SerializeField] float movementSpeed = 6f;
-    [SerializeField] float jumpForce = 5f;
-
-    [SerializeField] Transform groundCheck;
-    [SerializeField] LayerMask ground;
-
-    [SerializeField] AudioSource jumpSound;
-
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerMovementController : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody>();
-    }
+        public float ForwardMovementSpeed = 0.25f;
+        public float SideMovementSpeed = 0.1f;
+        public float VerticalMovementSpeed = 0.125f;
+        public float rotationSpeed = 45.0f;
+        public Rigidbody rb;
+        public float force = 5.0f;
+        private Quaternion originalRotation;
+        public float bounceForce = 10.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector3(horizontalInput * movementSpeed, rb.velocity.y, verticalInput * movementSpeed);
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        private void Start()
         {
-            Jump();
+            rb.mass = 1.0f; // Set the mass to 1 kilogram
+            rb.drag = 0.5f; // Set the drag to 0.5
+            originalRotation = transform.rotation;
         }
-    }
 
-    void Jump()
-    {
-        rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-        jumpSound.Play();
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy Head"))
+        private Dictionary<string, KeyCode> movementKeyBindings = new Dictionary<string, KeyCode>()
         {
-            Destroy(collision.transform.parent.gameObject);
-            Jump();
-        }
-    }
+            { "FORWARD", KeyCode.W },
+            { "BACKWARD", KeyCode.S },
+            { "LEFT", KeyCode.A },
+            { "RIGHT", KeyCode.D },
+            { "UP", KeyCode.Space },
+            { "DOWN", KeyCode.LeftShift },
+            {"E", KeyCode.E },
+            {"Q", KeyCode.Q }
+        };
 
-    bool IsGrounded()
-    {
-        return Physics.CheckSphere(groundCheck.position, .1f, ground);
+        public void FixedUpdate()
+        {
+
+            if (Input.GetKey(this.movementKeyBindings["FORWARD"]))
+            {
+                this.transform.position += new Vector3(
+                    this.transform.forward.x * this.ForwardMovementSpeed,
+                    0,
+                    this.transform.forward.z * this.ForwardMovementSpeed
+                );
+                rb.AddForce(Vector3.forward * force);
+            }
+
+            if (Input.GetKey(this.movementKeyBindings["BACKWARD"]))
+            {
+                this.transform.position += new Vector3(
+                    this.transform.forward.x * (-this.ForwardMovementSpeed / 1.95f),
+                    0,
+                    this.transform.forward.z * (-this.ForwardMovementSpeed / 1.95f)
+                );
+                rb.AddForce(Vector3.forward * -force);
+            }
+
+            if (Input.GetKey(this.movementKeyBindings["LEFT"]))
+            {
+                this.transform.Translate(Vector3.left * this.SideMovementSpeed);
+                rb.AddForce(Vector3.left * force);
+            }
+
+            if (Input.GetKey(this.movementKeyBindings["RIGHT"]))
+            {
+                this.transform.Translate(Vector3.right * this.SideMovementSpeed);
+                rb.AddForce(Vector3.right * force);
+            }
+
+            if (Input.GetKey(this.movementKeyBindings["UP"]))
+            {
+                this.transform.Translate(Vector3.up * this.VerticalMovementSpeed);
+                rb.AddForce(Vector3.up * force);
+            }
+
+            if (Input.GetKey(this.movementKeyBindings["DOWN"]))
+            {
+                this.transform.Translate(Vector3.down * this.VerticalMovementSpeed);
+                rb.AddForce(Vector3.down * force);
+            }
+            if (Input.GetKey(this.movementKeyBindings["E"]))
+            {
+                this.transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(this.movementKeyBindings["Q"]))
+            {
+                this.transform.Rotate(Vector3.down * rotationSpeed * Time.deltaTime);
+            }
+            transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, Time.deltaTime * rotationSpeed);
+        }
+        void OnCollisionEnter(Collision collision)
+        {
+            // Calculate the opposite direction of the collision normal
+            Vector3 bounceDirection = -collision.contacts[0].normal;
+
+            // Apply a force in the opposite direction
+            rb.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
+        }
     }
 }
