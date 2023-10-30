@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.70969534, g: 0.8193394, b: 0.9388731, a: 1}
+  m_IndirectSpecularColor: {r: 0.7097201, g: 0.81933844, b: 0.9389911, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -20240,7 +20240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 535581938}
   m_Layer: 0
-  m_Name: Spawnpoint 1 (3)
+  m_Name: Spawnpoint 3
   m_TagString: spawnPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24984,7 +24984,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1622719884}
-  - {fileID: 905793506}
   - {fileID: 1733662686}
   - {fileID: 535581938}
   - {fileID: 888012506}
@@ -28299,7 +28298,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SensorName: TopBottomSensor
-  m_DetectableTags: []
+  m_DetectableTags:
+  - City
+  - Border
+  - DropZone
   m_RaysPerDirection: 1
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
@@ -32789,7 +32791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888012506}
   m_Layer: 0
-  m_Name: Spawnpoint 1 (4)
+  m_Name: Spawnpoint 4
   m_TagString: spawnPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33086,37 +33088,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fbb8756519c039b4f804c77c5e3293f9, type: 3}
---- !u!1 &905793505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 905793506}
-  m_Layer: 0
-  m_Name: Spawnpoint 1 (1)
-  m_TagString: spawnPoints
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &905793506
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905793505}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.833002, y: 3.6511002, z: 6.7427845}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 661962640}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &907364301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34024,10 +33995,9 @@ GameObject:
   - component: {fileID: 933499853}
   - component: {fileID: 933499856}
   - component: {fileID: 933499855}
-  - component: {fileID: 933499854}
   m_Layer: 0
   m_Name: Parcel
-  m_TagString: Parcel
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34047,27 +34017,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2067235333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &933499854
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933499852}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &933499855
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34770,7 +34719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957185769}
   m_Layer: 0
-  m_Name: Spawnpoint 1 (5)
+  m_Name: Spawnpoint 5
   m_TagString: spawnPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56320,7 +56269,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1540734773}
-  - component: {fileID: 1540734774}
   m_Layer: 0
   m_Name: environment
   m_TagString: Untagged
@@ -56348,27 +56296,6 @@ Transform:
   - {fileID: 661962640}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1540734774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540734772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ef70e7626cea444b70967ca51b7164, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 541228076}
-  objectToSpawn: {fileID: 541228076}
-  spawnPoints:
-  - {fileID: 1622719884}
-  - {fileID: 905793506}
-  - {fileID: 1733662686}
-  - {fileID: 535581938}
-  - {fileID: 888012506}
-  - {fileID: 957185769}
 --- !u!1 &1541042496 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b549b1699e4cdad44b2c014041303df4, type: 3}
@@ -63184,7 +63111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1733662686}
   m_Layer: 0
-  m_Name: Spawnpoint 1 (2)
+  m_Name: Spawnpoint 2
   m_TagString: spawnPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65570,8 +65497,8 @@ GameObject:
   - component: {fileID: 1810624663}
   - component: {fileID: 1810624662}
   m_Layer: 0
-  m_Name: SkyBox
-  m_TagString: SkyBox
+  m_Name: Border
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65591,11 +65518,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 59, y: 50, z: 52}
+  m_Size: {x: 60, y: 9, z: 52}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1810624663
 Transform:
@@ -65606,7 +65533,7 @@ Transform:
   m_GameObject: {fileID: 1810624661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: 27.8, z: 4.2}
+  m_LocalPosition: {x: -8.4, y: 12.9, z: 4.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75262,15 +75189,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75373,9 +75300,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2067235335}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2067235343}
   m_SourcePrefab: {fileID: 100100000, guid: 1827841e093053148b2a5b69afb3d2a9, type: 3}
 --- !u!4 &2067235333 stripped
 Transform:
@@ -75400,7 +75324,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SensorName: TopDiagonalSensor
-  m_DetectableTags: []
+  m_DetectableTags:
+  - City
+  - Border
+  - DropZone
   m_RaysPerDirection: 2
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
@@ -75426,7 +75353,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SensorName: BottomDiagonalSensor
-  m_DetectableTags: []
+  m_DetectableTags:
+  - City
+  - Border
+  - DropZone
   m_RaysPerDirection: 2
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
@@ -75451,8 +75381,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: LevelSensor
-  m_DetectableTags: []
+  m_SensorName: SideSensor
+  m_DetectableTags:
+  - City
+  - Border
+  - DropZone
   m_RaysPerDirection: 5
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
@@ -75477,7 +75410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DecisionPeriod: 2
+  DecisionPeriod: 1
   TakeActionsBetweenDecisions: 1
 --- !u!114 &2067235339
 MonoBehaviour:
@@ -75495,8 +75428,13 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 3000
-  ParcelTransform: {fileID: 933499853}
   DropZone: {fileID: 541228080}
+  spawnPoints:
+  - {fileID: 1622719884}
+  - {fileID: 1733662686}
+  - {fileID: 535581938}
+  - {fileID: 888012506}
+  - {fileID: 957185769}
 --- !u!114 &2067235340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75537,7 +75475,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -75549,7 +75487,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -75573,25 +75511,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4, y: 0.5, z: 1.4}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2067235343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067235334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e639bd88ae74c4448c95061eaf3bcc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardMovementSpeed: 0.25
-  SideMovementSpeed: 0.1
-  VerticalMovementSpeed: 0.125
-  rotationSpeed: 45
-  rb: {fileID: 2067235341}
+  m_Size: {x: 1.6, y: 2, z: 1.6}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!1 &2070003425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b14aef9a05449784da6735de9ec90b24, type: 3}

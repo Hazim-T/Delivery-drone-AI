@@ -22,18 +22,22 @@ public class DroneBrain : Agent
 
     }
 
-    public Transform ParcelTransform;
-
     public Transform DropZone;
 
     private int NumOfCollision = 0;
 
+    public Transform[] spawnPoints;
+
     public override void OnEpisodeBegin()
     {
+        //reset drone position and rotation
         transform.localPosition = new Vector3(-11.7f, 13f, 2f);
-        // m_n_y TODO: you should make it reset to one of the 3 or 4 random positions you chose ----
+        transform.localRotation = new Quaternion(0, 0, 0, 0);
 
-        //DropZone.localPosition = new Vector3();
+        //spawn DropZone on one of the predetermined positions.
+        int randomIndex = Random.Range(0, spawnPoints.Length);
+        Transform randomSpawnPoint = spawnPoints[randomIndex];
+        DropZone.localPosition = randomSpawnPoint.localPosition;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -41,32 +45,30 @@ public class DroneBrain : Agent
         sensor.AddObservation(Vector3.Distance(transform.localPosition, DropZone.localPosition));
 
         AddReward(-0.01f); // time penalty to motivate faster runs
-
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        float speed = 2f;   
         //<ActionBuffers> SET THIS SET THIS
         float movex = actions.ContinuousActions[0];
-        float movey = actions.ContinuousActions[1];
+        float movey = actions.ContinuousActions[1]/4;
         float movez = actions.ContinuousActions[2];
-
-        float speed = 7f;
+        
         transform.Translate(new Vector3(movex, movey, movez) * speed * Time.fixedDeltaTime);
 
-        if (transform.position.y > 17f) {
-            AddReward(-100f);
-            //EndEpisode();
-        }
 
-        //distance from parcel
+        //distance to target
+        if (Vector3.Distance(transform.localPosition, DropZone.localPosition) > 5f)
         {
-            AddReward((1f / (Vector3.Distance(ParcelTransform.localPosition, transform.localPosition) + 1f))/10 );
+            AddReward((1f / (Vector3.Distance(transform.localPosition, DropZone.localPosition) + 1f)) / 5 );
         }
     }
 
     public void OnCollisionEnter(Collision collision)
     {
+        //transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(0, 0, 0, 0), Time.deltaTime * 45f);
+        transform.localRotation = new Quaternion(0, 0, 0, 0);
         NumOfCollision++;
 
         if (NumOfCollision == 5)
@@ -78,12 +80,16 @@ public class DroneBrain : Agent
           //if (collision.collider.tag == "DropZone")
           if (collision.collider.CompareTag("DropZone"))
         {
-            AddReward(100f);
+            AddReward(150f);
+            EndEpisode();
+        }
+        if (collision.collider.CompareTag("Border")) {
+            AddReward(-100f);
             EndEpisode();
         }
         else
         {
-            AddReward(-10f);
+            AddReward(-20f);
         }
 
     }
@@ -95,7 +101,7 @@ public class DroneBrain : Agent
     {
         ActionSegment<float> continuousactions = actionsOut.ContinuousActions;
         continuousactions[0] = Input.GetAxisRaw("Horizontal");
-        continuousactions[1] = 0; //idk how to
+        continuousactions[1] = 0; //idk
         continuousactions[2] = Input.GetAxisRaw("Vertical");
     }
 

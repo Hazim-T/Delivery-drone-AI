@@ -5,12 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Score
-  - Parcel
   - City
   - DropZone
-  - SkyBox
-  - Spawn Points
   - spawnPoints
+  - Border
   layers:
   - Default
   - TransparentFX

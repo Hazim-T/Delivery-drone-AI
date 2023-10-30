@@ -17,7 +17,7 @@ public class SpawnObjectAtEmptyPosition : MonoBehaviour
         Transform randomSpawnPoint = spawnPoints[randomIndex];
 
         // Spawn an object at the random spawn point
-        SpawnObject(randomSpawnPoint);
+        //SpawnObject(randomSpawnPoint);
 
     }
     /*
@@ -36,10 +36,10 @@ public class SpawnObjectAtEmptyPosition : MonoBehaviour
         {
             Debug.LogError("Object to spawn or spawn point is not assigned.");
         }
-    }*/
+    }
     void SpawnObject(Transform spawnPoint)
     {
         Instantiate(objectPrefab, spawnPoint.position, spawnPoint.rotation);
     }
-
+    */
 }
