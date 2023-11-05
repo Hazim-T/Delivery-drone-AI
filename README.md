@@ -1,6 +1,7 @@
 # Delivery-drone-AI
 A reinforcement learning project using unity to about a drone delivering parcels.
 
+WHEN TRAINING THE DRONE OR USING TENSORBOARD. GO TO THE WORKING DIRECTORY AND INTO THE TRAINING FILE INSIDE ASSETS.
 
 --Tasks:
 
