@@ -24,15 +24,22 @@ public class DroneBrain : Agent
 
     public Transform DropZone;
 
+    public Transform[] spawnPoints;
+
+    private Vector3[] points = {new Vector3()};
+    
     private int NumOfCollision = 0;
 
-    public Transform[] spawnPoints;
+    private float MAX_DISTANCE = 80f;
+
+    private float thrust = 0.0368f; // depends on the speed
 
     public override void OnEpisodeBegin()
     {
         //reset drone position and rotation
         transform.localPosition = new Vector3(-11.7f, 13f, 2f);
         transform.localRotation = new Quaternion(0, 0, 0, 0);
+        NumOfCollision = 0;
 
         //spawn DropZone on one of the predetermined positions.
         int randomIndex = Random.Range(0, spawnPoints.Length);
@@ -44,54 +51,69 @@ public class DroneBrain : Agent
     {
         sensor.AddObservation(Vector3.Distance(transform.localPosition, DropZone.localPosition));
 
-        AddReward(-0.01f); // time penalty to motivate faster runs
+        AddReward(-0.001f); // time penalty to motivate faster runs
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        float speed = 2f;   
-        //<ActionBuffers> SET THIS SET THIS
+        float speed = 8f;
         float movex = actions.ContinuousActions[0];
-        float movey = actions.ContinuousActions[1]/4;
+        float movey = actions.ContinuousActions[1] / 2;
         float movez = actions.ContinuousActions[2];
-        
-        transform.Translate(new Vector3(movex, movey, movez) * speed * Time.fixedDeltaTime);
+
+        // Counteract gravity by setting the Rigidbody's velocity
+        Vector3 velocity = new Vector3(movex, movey + thrust, movez) * speed;
+        Rigidbody rigidbody = GetComponent<Rigidbody>();
+        rigidbody.velocity = velocity;
 
 
         //distance to target
-        if (Vector3.Distance(transform.localPosition, DropZone.localPosition) > 5f)
+        if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 10f)
         {
-            AddReward((1f / (Vector3.Distance(transform.localPosition, DropZone.localPosition) + 1f)) / 5 );
+            AddReward(0.01f);
+        }
+
+        else
+        {
+            if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 5f)
+            {
+                AddReward(0.02f);
+            }
+
+            else {
+                float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
+                AddReward(-distance_scaled / 10); // [0, 0.1] negative
+            }
         }
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        //transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(0, 0, 0, 0), Time.deltaTime * 45f);
-        transform.localRotation = new Quaternion(0, 0, 0, 0);
         NumOfCollision++;
 
-        if (NumOfCollision == 5)
+        if (NumOfCollision >= 5)
         {
-            AddReward(-100f);
-            EndEpisode();
-        }
-
-          //if (collision.collider.tag == "DropZone")
-          if (collision.collider.CompareTag("DropZone"))
-        {
-            AddReward(150f);
-            EndEpisode();
-        }
-        if (collision.collider.CompareTag("Border")) {
-            AddReward(-100f);
+            AddReward(-5f);
             EndEpisode();
         }
         else
         {
-            AddReward(-20f);
+            AddReward(-0.5f);
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Border")){
+            AddReward(-5f);
+            EndEpisode();
         }
 
+        if (other.CompareTag("DropZone")) 
+        {
+            AddReward(5f);
+            EndEpisode();
+        }
     }
 
     //public override void Heuristic() is for debugging. In other words you control the drone yourself to test how
@@ -100,8 +122,21 @@ public class DroneBrain : Agent
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         ActionSegment<float> continuousactions = actionsOut.ContinuousActions;
-        continuousactions[0] = Input.GetAxisRaw("Horizontal");
-        continuousactions[1] = 0; //idk
+
+        continuousactions[0] = 0;
+        continuousactions[1] = 0;
+        continuousactions[2] = 0;
+
+        continuousactions[0] = Input.GetAxisRaw("Horizontal");        
+
+        if (Input.GetKey("i")){
+            continuousactions[1] = 1;
+        }
+
+        if (Input.GetKey("k")) {
+            continuousactions[1] = -1;
+        }
+
         continuousactions[2] = Input.GetAxisRaw("Vertical");
     }
 
