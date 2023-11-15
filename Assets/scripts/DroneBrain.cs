@@ -68,25 +68,24 @@ public class DroneBrain : Agent
 
 
         //distance to target
+
         if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 10f)
         {
-            AddReward(0.01f);
+            AddReward(0.001f);
         }
 
-        else
+        else if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 3f)
         {
-            if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 5f)
-            {
-                AddReward(0.02f);
-            }
-
-            else {
-                float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
-                AddReward(-distance_scaled / 10); // [0, 0.1] negative
-            }
+            AddReward(0.002f);
         }
+        else 
+        {
+        float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
+        AddReward(-distance_scaled / 200); // [0, 0.005] negative
+        }
+        
     }
-
+ 
     public void OnCollisionEnter(Collision collision)
     {
         NumOfCollision++;

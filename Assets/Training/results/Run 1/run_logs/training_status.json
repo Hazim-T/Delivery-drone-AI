@@ -1,0 +1,47 @@
+{
+    "DroneBehavior": {
+        "checkpoints": [
+            {
+                "steps": 499933,
+                "file_path": "results\\Run 1\\DroneBehavior\\DroneBehavior-499933.onnx",
+                "reward": -1.3800212712958455,
+                "creation_time": 1700074524.3188772,
+                "auxillary_file_paths": [
+                    "results\\Run 1\\DroneBehavior\\DroneBehavior-499933.pt"
+                ]
+            },
+            {
+                "steps": 999988,
+                "file_path": "results\\Run 1\\DroneBehavior\\DroneBehavior-999988.onnx",
+                "reward": -3.391657993857128,
+                "creation_time": 1700075258.1729646,
+                "auxillary_file_paths": [
+                    "results\\Run 1\\DroneBehavior\\DroneBehavior-999988.pt"
+                ]
+            },
+            {
+                "steps": 1000244,
+                "file_path": "results\\Run 1\\DroneBehavior\\DroneBehavior-1000244.onnx",
+                "reward": -3.391657993857128,
+                "creation_time": 1700075258.2151642,
+                "auxillary_file_paths": [
+                    "results\\Run 1\\DroneBehavior\\DroneBehavior-1000244.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000244,
+            "file_path": "results\\Run 1\\DroneBehavior.onnx",
+            "reward": -3.391657993857128,
+            "creation_time": 1700075258.2151642,
+            "auxillary_file_paths": [
+                "results\\Run 1\\DroneBehavior\\DroneBehavior-1000244.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
