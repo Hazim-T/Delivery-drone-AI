@@ -10,36 +10,22 @@ using Random = UnityEngine.Random;
 
 public class DroneBrain : Agent
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public Transform DropZone;
 
     public Transform[] spawnPoints;
 
-    private Vector3[] points = {new Vector3()};
-    
-    private int NumOfCollision = 0;
-
-    private float MAX_DISTANCE = 80f;
-
     private float thrust = 0.0368f; // depends on the speed
+
+    //private Vector3[] points = {new Vector3()};
+    
+    //private float MAX_DISTANCE = 80f;
+
 
     public override void OnEpisodeBegin()
     {
         //reset drone position and rotation
         transform.localPosition = new Vector3(-11.7f, 13f, 2f);
         transform.localRotation = new Quaternion(0, 0, 0, 0);
-        NumOfCollision = 0;
 
         //spawn DropZone on one of the predetermined positions.
         int randomIndex = Random.Range(0, spawnPoints.Length);
@@ -68,37 +54,33 @@ public class DroneBrain : Agent
 
 
         //distance to target
-
+        /*
         if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 10f)
         {
-            AddReward(0.001f);
+            AddReward(0.003f);
         }
 
         else if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 3f)
         {
-            AddReward(0.002f);
+            AddReward(0.01f);
         }
         else 
         {
         float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
-        AddReward(-distance_scaled / 200); // [0, 0.005] negative
+        AddReward(-distance_scaled / 100); // [0, 0.01] negative
         }
-        
+        */
+
+        AddReward(1 / (Vector3.Distance(transform.localPosition, DropZone.localPosition) + 0.01f)); // [0, 100]
+
+        //////math.clampf()
+        // could add the conditional reward and leave this as well (no else)
     }
  
     public void OnCollisionEnter(Collision collision)
     {
-        NumOfCollision++;
-
-        if (NumOfCollision >= 5)
-        {
             AddReward(-5f);
             EndEpisode();
-        }
-        else
-        {
-            AddReward(-0.5f);
-        }
     }
 
     public void OnTriggerEnter(Collider other)
@@ -114,9 +96,6 @@ public class DroneBrain : Agent
             EndEpisode();
         }
     }
-
-    //public override void Heuristic() is for debugging. In other words you control the drone yourself to test how
-    //good the AI is.
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
@@ -138,5 +117,4 @@ public class DroneBrain : Agent
 
         continuousactions[2] = Input.GetAxisRaw("Vertical");
     }
-
 }

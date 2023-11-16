@@ -5413,6 +5413,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6897812431423674546, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: MaxStep
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897812431423674546, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: spawnPoints.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -6494,6 +6498,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8209161082767760284, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226024213322772107, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: DecisionPeriod
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8238290954752456961, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
