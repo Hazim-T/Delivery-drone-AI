@@ -2,11 +2,12 @@
 A reinforcement learning project using unity to about a drone delivering parcels.
 
 When training or using tensorboard, go to the working directory then into assets then training, and then run this command on your conda env to start the training:
+
 mlagents-learn .\Droneconfig.yaml --run-id="Run _________" --torch-device "cpu"
 
-instead of __________ write a number like 5 so "Run 5"
+(instead of __________ write a number like 5 so "Run 5")
 
-and to use tensorboard, run this command:
+To use tensorboard, run this command:
 
 tensorboard --logdir results
 
