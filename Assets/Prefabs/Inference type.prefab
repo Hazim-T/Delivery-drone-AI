@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3912973585094954993}
   m_Layer: 0
-  m_Name: Spawnpoint 5
+  m_Name: Spawnpoint 4
   m_TagString: spawnPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1557,7 +1557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8972126631568732001}
   m_Layer: 0
-  m_Name: Spawnpoint 4
+  m_Name: Spawnpoint 3
   m_TagString: spawnPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10687,12 +10687,11 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 4000
+  MaxStep: 3500
   DropZone: {fileID: 1765300943347987171}
   spawnPoints:
   - {fileID: 7772782024041878387}
   - {fileID: 5755255702484324690}
-  - {fileID: 0}
   - {fileID: 8972126631568732001}
   - {fileID: 3912973585094954993}
 --- !u!114 &8226024213322772107

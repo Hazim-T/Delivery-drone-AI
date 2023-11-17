@@ -3,9 +3,9 @@ behaviors:
   DroneBehavior:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 512
-      buffer_size: 5000
-      learning_rate: 0.0003
+      batch_size: 2048
+      buffer_size: 50000
+      learning_rate: 0.0001
       beta: 0.005
       epsilon: 0.2
       lambd: 0.95
@@ -14,9 +14,9 @@ behaviors:
       beta_schedule: linear
       epsilon_schedule: linear
     network_settings:
-      normalize: false
+      normalize: true
       hidden_units: 256
-      num_layers: 2
+      num_layers: 3
       vis_encode_type: simple
       memory: null
       goal_conditioning_type: hyper
@@ -37,9 +37,9 @@ behaviors:
     keep_checkpoints: 5
     checkpoint_interval: 500000
     max_steps: 1000000
-    time_horizon: 256
-    summary_freq: 2000
-    threaded: false
+    time_horizon: 128
+    summary_freq: 50000
+    threaded: true
     self_play: null
     behavioral_cloning: null
 env_settings:
@@ -62,11 +62,11 @@ engine_settings:
   no_graphics: false
 environment_parameters: null
 checkpoint_settings:
-  run_id: Run 1
+  run_id: Run 3
   initialize_from: null
   load_model: false
   resume: false
-  force: true
+  force: false
   train_model: false
   inference: false
   results_dir: results
