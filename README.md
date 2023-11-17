@@ -1,7 +1,16 @@
 # Delivery-drone-AI
 A reinforcement learning project using unity to about a drone delivering parcels.
 
-WHEN TRAINING THE DRONE OR USING TENSORBOARD. GO TO THE WORKING DIRECTORY AND INTO THE TRAINING FILE INSIDE ASSETS.
+When training or using tensorboard, go to the working directory then into assets then training, and then run this command on your conda env to start the training:
+
+mlagents-learn .\Droneconfig.yaml --run-id="Run _________" --torch-device "cpu"
+
+(instead of __________ write a number like 5 so "Run 5")
+
+To use tensorboard, run this command:
+
+tensorboard --logdir results
+
 
 --Tasks:
 
@@ -9,20 +18,16 @@ WHEN TRAINING THE DRONE OR USING TENSORBOARD. GO TO THE WORKING DIRECTORY AND IN
 
 - Adding trails for drones.
 
-- Adding skybox and world border and parcel assets. (world border remaining)
+- Adding skybox and world border and parcel assets. [Done]
 
 
+- positive rewards : {distance to drop zone, delivering parcel} [DONE]
 
-- positive rewards : {time, accuracty of drop, distance to drop zone} [DONE]
-
-- negative rewards : {collision for hitting environment and drones, going too high, parcel collides} [DONE]
+- negative rewards : {collision for hitting environment and world border, time penatly} [DONE]
 
   
 - Having multiple drones in each episode, but multiple episodes are the same time ghosting since the environment is constant. (under thought)
 
-- beside number_of_steps, add a timer to see how the drone improves. [DONE]
-
-- mechanics needed : {drop zone random generation (under work), parcel attaching and detaching (under thought), parcel condition(number of parcel collisions mapped to conditions)[DONE]
-                       drone recognizing it's own parcel(under thought)}
+- mechanics needed : {drop zone random generation [Done], parcel attaching and detaching (under thought) }
   
 
