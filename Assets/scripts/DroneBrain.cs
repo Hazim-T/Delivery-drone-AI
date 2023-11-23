@@ -18,7 +18,7 @@ public class DroneBrain : Agent
 
     //private Vector3[] points = {new Vector3()};
     
-    //private float MAX_DISTANCE = 80f;
+    private float MAX_DISTANCE = 80f;
 
 
     public override void OnEpisodeBegin()
@@ -35,9 +35,10 @@ public class DroneBrain : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(Vector3.Distance(transform.localPosition, DropZone.localPosition));
+        sensor.AddObservation(transform.localPosition - DropZone.localPosition);
+        //sensor.AddObservation(Vector3.Distance(transform.localPosition, DropZone.localPosition));
 
-        AddReward(-0.001f); // time penalty to motivate faster runs
+        AddReward(-0.01f); // time penalty to motivate faster runs
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -67,11 +68,13 @@ public class DroneBrain : Agent
         else 
         {
         float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
-        AddReward(-distance_scaled / 100); // [0, 0.01] negative
+        AddReward(-distance_scaled); // [0, 0.1] negative
         }
         */
+        float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
+        AddReward(-distance_scaled / 10); // [0, 0.1] negative
 
-        AddReward(1 / (Vector3.Distance(transform.localPosition, DropZone.localPosition) + 0.01f)); // [0, 100]
+        //AddReward(1/(Vector3.Distance(transform.localPosition, DropZone.localPosition) + 0.05f)); // [0, 100]
 
         //////math.clampf()
         // could add the conditional reward and leave this as well (no else)
@@ -79,20 +82,20 @@ public class DroneBrain : Agent
  
     public void OnCollisionEnter(Collision collision)
     {
-            AddReward(-5f);
+            AddReward(-100f);
             EndEpisode();
     }
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Border")){
-            AddReward(-5f);
+            AddReward(-100f);
             EndEpisode();
         }
 
         if (other.CompareTag("DropZone")) 
         {
-            AddReward(5f);
+            AddReward(100f);
             EndEpisode();
         }
     }

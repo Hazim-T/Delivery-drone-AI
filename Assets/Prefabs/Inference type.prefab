@@ -1361,6 +1361,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 60, y: 10, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4825599789586317271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2384515692493774512}
+  - component: {fileID: 85247601414510728}
+  m_Layer: 0
+  m_Name: Bottom
+  m_TagString: Border
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2384515692493774512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825599789586317271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -14.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1723939615091466006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &85247601414510728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825599789586317271}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 0.2, z: 52}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4981943724336111167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1555,7 @@ MonoBehaviour:
   m_RaysPerDirection: 1
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
-  m_RayLength: 15
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1545,6 +1598,7 @@ Transform:
   - {fileID: 3376529345357960653}
   - {fileID: 9192992079328823311}
   - {fileID: 3212386516645524505}
+  - {fileID: 2384515692493774512}
   m_Father: {fileID: 4722279433043018805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6019735208722483655
@@ -1572,7 +1626,7 @@ Transform:
   m_GameObject: {fileID: 6019735208722483655}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.61, y: 8.3749, z: 1.44}
+  m_LocalPosition: {x: -30.21, y: 8.3749, z: 1.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10655,7 +10709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 3
@@ -10706,7 +10760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DecisionPeriod: 1
+  DecisionPeriod: 2
   TakeActionsBetweenDecisions: 0
 --- !u!114 &6695326382732451192
 MonoBehaviour:
@@ -10728,7 +10782,7 @@ MonoBehaviour:
   m_RaysPerDirection: 5
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
-  m_RayLength: 15
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -10757,7 +10811,7 @@ MonoBehaviour:
   m_RaysPerDirection: 2
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
-  m_RayLength: 15
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -10786,7 +10840,7 @@ MonoBehaviour:
   m_RaysPerDirection: 2
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.6
-  m_RayLength: 15
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
