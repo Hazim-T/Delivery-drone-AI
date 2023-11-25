@@ -65,16 +65,16 @@ public class DroneBrain : Agent
         {
             AddReward(0.01f);
         }
-        else 
+         
+        
+        if (Vector3.Distance(transform.localPosition, DropZone.localPosition) < 5f)
         {
-        float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
-        AddReward(-distance_scaled); // [0, 0.1] negative
+            AddReward(1/(Vector3.Distance(transform.localPosition, DropZone.localPosition) + 0.5f)); // [0, 100]
         }
         */
         float distance_scaled = Vector3.Distance(DropZone.localPosition, transform.localPosition) / MAX_DISTANCE; // [0, 1] approx
         AddReward(-distance_scaled / 10); // [0, 0.1] negative
 
-        //AddReward(1/(Vector3.Distance(transform.localPosition, DropZone.localPosition) + 0.05f)); // [0, 100]
 
         //////math.clampf()
         // could add the conditional reward and leave this as well (no else)

@@ -2,58 +2,58 @@
     "DroneBehavior": {
         "checkpoints": [
             {
-                "steps": 1499880,
-                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-1499880.onnx",
-                "reward": 268.1759539047877,
-                "creation_time": 1700670856.478244,
+                "steps": 4499956,
+                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-4499956.onnx",
+                "reward": 33.5787429393724,
+                "creation_time": 1700852170.5778463,
                 "auxillary_file_paths": [
-                    "results\\Run 3\\DroneBehavior\\DroneBehavior-1499880.pt"
+                    "results\\Run 3\\DroneBehavior\\DroneBehavior-4499956.pt"
                 ]
             },
             {
-                "steps": 1999962,
-                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-1999962.onnx",
-                "reward": 305.45201761905963,
-                "creation_time": 1700671507.177759,
+                "steps": 4999872,
+                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-4999872.onnx",
+                "reward": 44.21738543697432,
+                "creation_time": 1700852975.4732122,
                 "auxillary_file_paths": [
-                    "results\\Run 3\\DroneBehavior\\DroneBehavior-1999962.pt"
+                    "results\\Run 3\\DroneBehavior\\DroneBehavior-4999872.pt"
                 ]
             },
             {
-                "steps": 2499999,
-                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-2499999.onnx",
-                "reward": 396.6897661089897,
-                "creation_time": 1700672151.780466,
+                "steps": 5499974,
+                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-5499974.onnx",
+                "reward": 36.67379967202532,
+                "creation_time": 1700853774.192582,
                 "auxillary_file_paths": [
-                    "results\\Run 3\\DroneBehavior\\DroneBehavior-2499999.pt"
+                    "results\\Run 3\\DroneBehavior\\DroneBehavior-5499974.pt"
                 ]
             },
             {
-                "steps": 2999916,
-                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-2999916.onnx",
-                "reward": 418.9852073987325,
-                "creation_time": 1700672796.1483853,
+                "steps": 5999957,
+                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-5999957.onnx",
+                "reward": 25.18200043643393,
+                "creation_time": 1700854583.4466145,
                 "auxillary_file_paths": [
-                    "results\\Run 3\\DroneBehavior\\DroneBehavior-2999916.pt"
+                    "results\\Run 3\\DroneBehavior\\DroneBehavior-5999957.pt"
                 ]
             },
             {
-                "steps": 3000044,
-                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-3000044.onnx",
-                "reward": 418.9852073987325,
-                "creation_time": 1700672796.209206,
+                "steps": 6000213,
+                "file_path": "results\\Run 3\\DroneBehavior\\DroneBehavior-6000213.onnx",
+                "reward": 25.18200043643393,
+                "creation_time": 1700854583.5362961,
                 "auxillary_file_paths": [
-                    "results\\Run 3\\DroneBehavior\\DroneBehavior-3000044.pt"
+                    "results\\Run 3\\DroneBehavior\\DroneBehavior-6000213.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 3000044,
+            "steps": 6000213,
             "file_path": "results\\Run 3\\DroneBehavior.onnx",
-            "reward": 418.9852073987325,
-            "creation_time": 1700672796.209206,
+            "reward": 25.18200043643393,
+            "creation_time": 1700854583.5362961,
             "auxillary_file_paths": [
-                "results\\Run 3\\DroneBehavior\\DroneBehavior-3000044.pt"
+                "results\\Run 3\\DroneBehavior\\DroneBehavior-6000213.pt"
             ]
         }
     },

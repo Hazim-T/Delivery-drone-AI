@@ -332,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 97020377623486048, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 91b05263052529745af0b4388a412e10, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b6e910d327e2bf54c93d7a0d44033207, type: 3}
     - target: {fileID: 97020377623486048, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_BehaviorType
       value: 2
@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6897812431423674546, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: MaxStep
-      value: 3000
+      value: 3500
       objectReference: {fileID: 0}
     - target: {fileID: 6897812431423674546, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: spawnPoints.Array.size
