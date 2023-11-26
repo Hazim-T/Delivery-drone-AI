@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 732953504489046187, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.1
+      objectReference: {fileID: 0}
     - target: {fileID: 734212292959342107, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5337,6 +5341,30 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6653422700545413996, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653422700545413996, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653422700545413996, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653422700545413996, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653422700545413996, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653422700545413996, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6682215233172159403, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6796,6 +6824,30 @@ PrefabInstance:
     - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_RayLength
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: rayMissColor.g
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: rayMissColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_MaxRayDegrees
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_RaysPerDirection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_EndVerticalOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451655301794361000, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: m_StartVerticalOffset
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8458782589862638926, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_Convex
