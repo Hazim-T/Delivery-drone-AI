@@ -28,6 +28,6 @@ tensorboard --logdir results
   
 - Having multiple drones in each episode, but multiple episodes are the same time ghosting since the environment is constant. (under thought)
 
-- mechanics needed : {drop zone random generation [Done], parcel attaching and detaching (under thought) }
+- mechanics needed : {drop zone random generation [Done] }
   
 
