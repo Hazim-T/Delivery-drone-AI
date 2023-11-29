@@ -76,6 +76,11 @@ public class DroneBrain : Agent
         AddReward(-distance_scaled / 10); // [0, 0.1] negative
 
 
+        if(Vector3.Distance(transform.localPosition, DropZone.localPosition) < 3f)
+        {
+            AddReward(1 / (transform.localPosition.y + 1));
+        }
+
         //////math.clampf()
         // could add the conditional reward and leave this as well (no else)
     }

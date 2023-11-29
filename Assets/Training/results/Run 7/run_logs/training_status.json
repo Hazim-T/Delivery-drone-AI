@@ -1,0 +1,65 @@
+{
+    "DroneBehavior": {
+        "checkpoints": [
+            {
+                "steps": 5499874,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-5499874.onnx",
+                "reward": 97.72239814230133,
+                "creation_time": 1701282699.5871112,
+                "auxillary_file_paths": [
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-5499874.pt"
+                ]
+            },
+            {
+                "steps": 5999967,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-5999967.onnx",
+                "reward": 98.31882075183594,
+                "creation_time": 1701283666.112875,
+                "auxillary_file_paths": [
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-5999967.pt"
+                ]
+            },
+            {
+                "steps": 6499943,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-6499943.onnx",
+                "reward": 98.63542161696029,
+                "creation_time": 1701284632.5029979,
+                "auxillary_file_paths": [
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-6499943.pt"
+                ]
+            },
+            {
+                "steps": 6999980,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-6999980.onnx",
+                "reward": 98.69245323210161,
+                "creation_time": 1701285611.480611,
+                "auxillary_file_paths": [
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-6999980.pt"
+                ]
+            },
+            {
+                "steps": 7000049,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-7000049.onnx",
+                "reward": 98.6941978555929,
+                "creation_time": 1701285611.5648606,
+                "auxillary_file_paths": [
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-7000049.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7000049,
+            "file_path": "results\\Run 7\\DroneBehavior.onnx",
+            "reward": 98.6941978555929,
+            "creation_time": 1701285611.5648606,
+            "auxillary_file_paths": [
+                "results\\Run 7\\DroneBehavior\\DroneBehavior-7000049.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
