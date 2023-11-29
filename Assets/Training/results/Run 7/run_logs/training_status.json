@@ -2,58 +2,58 @@
     "DroneBehavior": {
         "checkpoints": [
             {
-                "steps": 5499967,
-                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-5499967.onnx",
-                "reward": -28.199806397159893,
-                "creation_time": 1701205115.4785914,
+                "steps": 2999924,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-2999924.onnx",
+                "reward": -34.18855401277542,
+                "creation_time": 1701214906.44654,
                 "auxillary_file_paths": [
-                    "results\\Run 7\\DroneBehavior\\DroneBehavior-5499967.pt"
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-2999924.pt"
                 ]
             },
             {
-                "steps": 5999999,
-                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-5999999.onnx",
-                "reward": -28.08600107261113,
-                "creation_time": 1701205970.1228092,
+                "steps": 3499913,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-3499913.onnx",
+                "reward": -37.52191657572985,
+                "creation_time": 1701215828.0434296,
                 "auxillary_file_paths": [
-                    "results\\Run 7\\DroneBehavior\\DroneBehavior-5999999.pt"
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-3499913.pt"
                 ]
             },
             {
-                "steps": 6499943,
-                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-6499943.onnx",
-                "reward": -28.413974046707153,
-                "creation_time": 1701206833.261253,
+                "steps": 3999925,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-3999925.onnx",
+                "reward": -30.102083313054052,
+                "creation_time": 1701216684.3544548,
                 "auxillary_file_paths": [
-                    "results\\Run 7\\DroneBehavior\\DroneBehavior-6499943.pt"
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-3999925.pt"
                 ]
             },
             {
-                "steps": 6999931,
-                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-6999931.onnx",
-                "reward": -26.62310643838002,
-                "creation_time": 1701207768.906019,
+                "steps": 4499973,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-4499973.onnx",
+                "reward": -27.299576010022843,
+                "creation_time": 1701217519.9315584,
                 "auxillary_file_paths": [
-                    "results\\Run 7\\DroneBehavior\\DroneBehavior-6999931.pt"
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-4499973.pt"
                 ]
             },
             {
-                "steps": 7000059,
-                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-7000059.onnx",
-                "reward": -26.62310643838002,
-                "creation_time": 1701207768.986792,
+                "steps": 4971669,
+                "file_path": "results\\Run 7\\DroneBehavior\\DroneBehavior-4971669.onnx",
+                "reward": -23.821532160043716,
+                "creation_time": 1701218318.5923393,
                 "auxillary_file_paths": [
-                    "results\\Run 7\\DroneBehavior\\DroneBehavior-7000059.pt"
+                    "results\\Run 7\\DroneBehavior\\DroneBehavior-4971669.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 7000059,
+            "steps": 4971669,
             "file_path": "results\\Run 7\\DroneBehavior.onnx",
-            "reward": -26.62310643838002,
-            "creation_time": 1701207768.986792,
+            "reward": -23.821532160043716,
+            "creation_time": 1701218318.5923393,
             "auxillary_file_paths": [
-                "results\\Run 7\\DroneBehavior\\DroneBehavior-7000059.pt"
+                "results\\Run 7\\DroneBehavior\\DroneBehavior-4971669.pt"
             ]
         }
     },
