@@ -466,6 +466,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1334624382857494934, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: rayMissColor.g
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334624382857494934, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
+      propertyPath: rayMissColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4722279433043018805, guid: 442712adbdce6f24dae4d1e78d26ebc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.214882
