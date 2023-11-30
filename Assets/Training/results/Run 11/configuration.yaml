@@ -3,7 +3,7 @@ behaviors:
   DroneBehavior:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 5120
+      batch_size: 4096
       buffer_size: 50000
       learning_rate: 0.0007
       beta: 0.005
@@ -23,7 +23,7 @@ behaviors:
       deterministic: false
     reward_signals:
       extrinsic:
-        gamma: 0.95
+        gamma: 0.92
         strength: 1.0
         network_settings:
           normalize: false
