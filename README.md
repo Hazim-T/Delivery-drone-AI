@@ -1,4 +1,4 @@
-# Delivery-drone-AI
+# Delivery-drone-AI with RL
 A reinforcement learning project using unity to train drones on delivering parcels.
 
 When training or using tensorboard, go to the working directory then into assets then training, and then run this command on your conda env to start the training:
